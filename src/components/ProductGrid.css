@@ -1,0 +1,113 @@
+/* Main section container */
+.container {
+    display: flex;
+  }
+  
+  /* Row that contains filter and items */
+  .row {
+    display: flex;
+    width: 100%; /* Full width of the container */
+  }
+  
+  /* Left column (Filter section) */
+  .filter-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 200px; /* Fixed width for the filter section */
+    flex: 0 0 33.33%; /* Take 1/3 of the screen width */
+  }
+  
+  /* Filter options */
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .form-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+  
+  /* Right column (Products section) */
+  .items {
+    padding-left: 20px;
+    flex: 0 0 66.67%; /* Take 2/3 of the screen width */
+  }
+  
+  /* Product cards container */
+  .cards {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  /* Card container */
+  .card-container {
+    /* Each card will fill the available space in the grid */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Card styling */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%; /* Make sure the card takes full height of its container */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img-top {
+    height: 150px;
+    object-fit: contain;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #28a745;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .filter-section {
+      margin-bottom: 20px;
+    }
+  
+    .items {
+      padding-left: 0;
+    }
+  
+    /* Adjust product grid for smaller screens */
+    .cards {
+      grid-template-columns: repeat(2, 1fr); /* Two products per row on smaller screens */
+    }
+  
+    .card-container {
+      flex: 1; /* Allow card containers to grow to fill space */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cards {
+      grid-template-columns: 1fr; /* One product per row on very small screens */
+    }
+  }
+  

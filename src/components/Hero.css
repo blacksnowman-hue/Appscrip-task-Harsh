@@ -1,0 +1,52 @@
+/* Hero.css */
+
+.Hero-grid {
+    padding: 50px;
+    position: relative;  /* Position relative to allow absolute positioning of the sidebar */
+}
+
+.Hero {
+    font-family: 'Simplon Norm', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 72px;
+    letter-spacing: 1px;
+}
+
+.para {
+    text-align: center;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center; /* Center items vertically in the flex container */
+}
+
+.item-count {
+    margin-right: 20px; /* Space to the right of item count */
+}
+
+.recommendation {
+    display: flex; /* Use flex for alignment */
+    align-items: center; /* Center vertically */
+    margin-left: 20px; /* Add space to the left of recommendation section */
+}
+
+.recommendation label {
+    margin-right: 8px; /* Space between label and dropdown */
+}
+
+.recommendation-dropdown {
+    padding: 5px; /* Padding for dropdown */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    box-shadow: none; /* Remove any shadow */
+    border-radius: 4px; /* Optional: rounded corners */
+    background-color: #f8f9fa; /* Optional: background color */
+}
+
+/* Optional: Add a hover effect for better UI */
+.recommendation-dropdown:hover {
+    background-color: #e2e6ea; /* Light grey on hover */
+}

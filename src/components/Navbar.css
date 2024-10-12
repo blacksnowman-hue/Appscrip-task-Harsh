@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .logo {
+   
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .logo-right {
+    position: absolute;
+    left: 50px; /* Adjust this for how far right you want the logo */
+  }
+  
+  .nav-links {
+    display: flex;
+    padding-top: 30px;
+    font-weight: bold;
+
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+    margin-bottom: 10px;
+    font-family: Simplon Norm ;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .dropdown-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-text {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .dropdown-icon {
+    width: 16px;
+    height: 16px;
+  }

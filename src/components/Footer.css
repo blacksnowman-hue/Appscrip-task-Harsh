@@ -1,0 +1,105 @@
+.footer {
+    background-color: black; /* Set background color to black */
+    color: white; /* Text color remains white */
+    padding: 40px 50px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between sections */
+    flex: 1;
+    width: 100%; /* Ensure the section takes up full width */
+    gap: 40px; /* Add some gap between each section */
+}
+
+.newsletter {
+    flex: 1; /* Allow the newsletter section to grow */
+    margin-right: 20px; /* Space between sections */
+}
+
+.newsletter-input {
+    display: flex; /* Align input and button inline */
+    margin-top: 10px; /* Space above the input/button */
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px; /* Space between input and button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for better aesthetics */
+}
+
+.newsletter button {
+    padding: 10px 15px; /* Better padding for the button */
+    background-color: #ffffff; /* Contrast background for visibility */
+    color: black; /* Change text color for contrast */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.newsletter button:hover {
+    background-color: #e0e0e0; /* Light grey on hover */
+}
+
+.footer-links,
+.footer-down,
+.footer-about,
+.footer-social {
+    flex: 1; /* Ensure equal space for all sections */
+    margin: 0 20px; /* Margins between sections */
+}
+
+.footer-links ul,
+.footer-about ul,
+.footer-down ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+}
+
+.footer-links li,
+.footer-about li,
+.footer-down li {
+    margin: 5px 0; /* Space between list items */
+}
+
+/* Added styles for currency line */
+.currency-line {
+    border: none; /* Remove default border */
+    width: 100%;
+    border-top: 1px solid white; /* White line */
+    margin: 10px 0; /* Space above and below the line */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.p {
+    font-size: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .footer-links,
+    .footer-about,
+    .footer-down,
+    .footer-social {
+        margin: 20px 0; /* Space for stacked items */
+    }
+}
